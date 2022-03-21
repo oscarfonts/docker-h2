@@ -12,7 +12,7 @@ ENV DATA_DIR /opt/h2-data
 RUN apk add --no-cache curl
 
 RUN mkdir -p ${DATA_DIR} \
-    && curl ${DOWNLOAD} -o h2.zip \
+    && curl -L ${DOWNLOAD} -o h2.zip \
     && unzip h2.zip -d /opt/ \
     && rm h2.zip
 
