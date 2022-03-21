@@ -6,7 +6,7 @@ FROM openjdk:jre-alpine
 
 LABEL maintainer="oscar.fonts@geomatico.es"
 
-ENV DOWNLOAD http://www.h2database.com/h2-2019-03-13.zip
+ENV DOWNLOAD https://github.com/h2database/h2database/releases/download/version-2.1.210/h2-2022-01-17.zip
 ENV DATA_DIR /opt/h2-data
 
 RUN apk add --no-cache curl
