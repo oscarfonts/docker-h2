@@ -59,3 +59,11 @@ See the logs while running:
 ```
 docker logs -f MyH2Instance
 ```
+
+## Access H2 via CLI:
+
+If you want to access the H2 database via CLI, there is a shell script, named `h2cli`, that launches H2 Shell. It is already in the $PATH, so you do not need to cd to anywhere. The connection details are specified by the means of options:
+
+* `-u` or `--user` - the user under which to login into H2 db. Default: `sa`.
+* `-d` or `--dbname` - the database which we want to connect to via CLI. Default: `test`.
+* `-p` or `--port` - the connection port. Default to `1521`.
