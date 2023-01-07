@@ -70,3 +70,5 @@ If you want to access the H2 database via CLI, there is a shell script, named `h
 * `-u` or `--user` - the user under which to login into H2 db. Default: `sa`.
 * `-d` or `--dbname` - the database which we want to connect to via CLI. Default: `test`.
 * `-p` or `--port` - the connection port. Default: `1521`.
+
+Note: h2 cli is available in all images except `alpine` based
