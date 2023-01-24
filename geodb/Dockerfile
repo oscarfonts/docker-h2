@@ -3,7 +3,7 @@ FROM oscarfonts/h2:1.1.119
 # Adding dependencies from:
 #  https://github.com/jdeolive/geodb/tree/0.7-RC2
 
-LABEL maintainer="oscar.fonts@geomatico.es"
+LABEL org.opencontainers.image.authors="https://github.com/oscarfonts/docker-h2/graphs/contributors"
 
 RUN cd /opt/h2/bin \
     && wget https://repo.osgeo.org/repository/geotools-releases/org/opengeo/geodb/0.7-RC2/geodb-0.7-RC2.jar \
