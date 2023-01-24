@@ -52,6 +52,9 @@ Or run as a service with an extra custom config set in the command line, like al
 docker run -d -p 1521:1521 -p 81:81 -v /path/to/local/data_dir:/opt/h2-data -e H2_OPTIONS=-ifNotExists --name=MyH2Instance oscarfonts/h2
 ```
 
+By the way, please, be aware about the fact, that the option `-ifNotExists` is not available in docker image `1.1.119`, take a look
+into [this issue](https://github.com/h2database/h2database/issues/1894).
+
 The H2 web console will be available at: http://localhost:81
 
 See the logs while running:
@@ -59,3 +62,13 @@ See the logs while running:
 ```
 docker logs -f MyH2Instance
 ```
+
+## Access H2 via CLI:
+
+If you want to access the H2 database via CLI, there is a shell script, named `h2cli`, that launches H2 Shell. It is already in the `$PATH`, so you do not need to cd to anywhere. The connection details are specified by the means of options:
+
+* `-u` or `--user` - the user under which to login into H2 db. Default: `sa`.
+* `-d` or `--dbname` - the database which we want to connect to via CLI. Default: `test`.
+* `-p` or `--port` - the connection port. Default: `1521`.
+
+Note: h2 cli is available in all images except `alpine` based
