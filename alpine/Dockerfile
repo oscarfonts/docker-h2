@@ -6,7 +6,7 @@ FROM openjdk:jre-alpine
 
 LABEL org.opencontainers.image.authors="https://github.com/oscarfonts/docker-h2/graphs/contributors"
 
-ENV DOWNLOAD https://github.com/h2database/h2database/releases/download/version-2.1.210/h2-2022-01-17.zip
+ENV DOWNLOAD https://github.com/h2database/h2database/releases/download/version-2.1.214/h2-2022-06-13.zip
 ENV DATA_DIR /opt/h2-data
 
 RUN apk add --no-cache curl
