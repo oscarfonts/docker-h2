@@ -24,7 +24,7 @@ Note the use of this property in the constructor of https://github.com/h2databas
 
 [Automated builds](https://hub.docker.com/r/oscarfonts/h2/) on [docker registry](https://registry.hub.docker.com/):
 
-* [`latest`, `2.2.224` (*2.2.224/Dockerfile*)](https://github.com/oscarfonts/docker-h2/blob/master/2.2.224/Dockerfile)
+* [`latest`, `2.3.232` (*2.3.232/Dockerfile*)](https://github.com/oscarfonts/docker-h2/blob/master/2.3.232/Dockerfile)
 * [`2.2.224` (*2.2.224/Dockerfile*)](https://github.com/oscarfonts/docker-h2/blob/master/2.2.224/Dockerfile)
 * [`2.1.210` (*2.1.210/Dockerfile*)](https://github.com/oscarfonts/docker-h2/blob/master/2.1.210/Dockerfile)
 * [`2.0.204` (*2.0.204/Dockerfile*)](https://github.com/oscarfonts/docker-h2/blob/master/2.0.204/Dockerfile)
